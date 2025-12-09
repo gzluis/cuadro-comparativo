@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Educación a Distancia vs. Virtual</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Definición de la paleta de colores personalizada */
+        :root {
+            --academic-blue-dark: #1e3a8a; /* Azul académico oscuro (Blue 900) */
+            --academic-blue-light: #3b82f6; /* Azul de acento (Blue 500) */
+            --background-white: #f9fafb; /* Blanco suave */
+        }
+
+        /* Estilos personalizados para el cuerpo y fuentes */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-white);
+        }
+        
+        /* Asegurando que los íconos se muestren */
+        .lucide {
+            stroke-width: 1.5;
+        }
+
+        /* Estilo para las secciones principales */
+        .academic-card {
+            background-color: white;
+            border-top: 6px solid var(--academic-blue-light);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .academic-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+
+    <!-- Contenedor Principal de la Infografía -->
+    <div class="max-w-6xl mx-auto rounded-xl overflow-hidden bg-white shadow-2xl">
+
+        <!-- Encabezado y Título -->
+        <header class="bg-blue-900 text-white p-6 md:p-10 text-center rounded-t-xl">
+            <h1 class="text-3xl md:text-5xl font-extrabold mb-2">
+                Infografía Comparativa
+            </h1>
+            <p class="text-xl md:text-2xl font-light text-blue-200">
+                Educación a Distancia vs. Educación Virtual
+            </p>
+        </header>
+
+        <!-- Resumen Introductorio -->
+        <section class="p-6 md:p-12 text-gray-700 bg-gray-50 border-b">
+            <p class="text-lg text-center leading-relaxed max-w-4xl mx-auto">
+                Ambos modelos representan alternativas al aula tradicional, pero su diferencia clave radica en la dependencia tecnológica y el nivel de sincronía. La Educación Virtual es la evolución digitalizada de la Educación a Distancia.
+            </p>
+        </section>
+
+        <!-- Sección de Conceptos y Enfoques Visuales -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 md:p-12">
+
+            <!-- 1. Educación a Distancia (Modelo Tradicional) -->
+            <div class="academic-card p-6 rounded-xl">
+                <div class="flex items-center space-x-4 mb-4">
+                    <i data-lucide="mail" class="lucide w-10 h-10 text-blue-900"></i>
+                    <i data-lucide="book-open" class="lucide w-10 h-10 text-blue-900"></i>
+                    <h2 class="text-3xl font-bold text-blue-900">Educación a Distancia</h2>
+                </div>
+                
+                <p class="text-gray-600 mb-4">
+                    Es el modelo original, caracterizado por la **separación física** y el uso de tecnologías de baja inmediatez.
+                </p>
+                <ul class="space-y-3 text-sm text-gray-700">
+                    <li class="flex items-start">
+                        <i data-lucide="package" class="lucide w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <span class="font-semibold">Medio Principal:</span> Material impreso, correspondencia postal, radio o cintas de video/audio.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="clock-2" class="lucide w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <span class="font-semibold">Sincronía:</span> 
+                            Predominantemente **Asíncrona**. La interacción es diferida y esporádica.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="wifi-off" class="lucide w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <span class="font-semibold">Tecnología:</span> Baja dependencia de internet o plataformas complejas.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 2. Educación Virtual (Modelo Digital) -->
+            <div class="academic-card p-6 rounded-xl">
+                <div class="flex items-center space-x-4 mb-4">
+                    <i data-lucide="monitor" class="lucide w-10 h-10 text-blue-900"></i>
+                    <i data-lucide="cloud" class="lucide w-10 h-10 text-blue-900"></i>
+                    <h2 class="text-3xl font-bold text-blue-900">Educación Virtual</h2>
+                </div>
+                
+                <p class="text-gray-600 mb-4">
+                    Es el modelo moderno, donde el proceso de enseñanza-aprendizaje ocurre en un **ciberespacio** totalmente digital.
+                </p>
+                <ul class="space-y-3 text-sm text-gray-700">
+                    <li class="flex items-start">
+                        <i data-lucide="server" class="lucide w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <span class="font-semibold">Medio Principal:</span> Plataformas LMS (Moodle, Canvas), videoconferencias y recursos multimedia.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="video" class="lucide w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <span class="font-semibold">Sincronía:</span> 
+                            Combina actividades **Síncronas** (clases en vivo) y Asíncronas (foros, grabaciones).
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="wifi" class="lucide w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <span class="font-semibold">Tecnología:</span> Alta dependencia de internet de banda ancha y dispositivos.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tabla Comparativa Detallada -->
+        <section class="p-6 md:p-12">
+            <h2 class="text-3xl font-extrabold text-blue-900 text-center mb-8 border-b-2 border-blue-500 pb-3">
+                Tabla de Comparación Detallada
+            </h2>
+
+            <div class="overflow-x-auto rounded-lg shadow-lg">
+                <table class="min-w-full divide-y divide-blue-200">
+                    <thead class="bg-blue-100">
+                        <tr>
+                            <th scope="col" class="px-4 py-3 text-left text-xs font-bold text-blue-900 uppercase tracking-wider w-1/4">
+                                Característica
+                            </th>
+                            <th scope="col" class="px-4 py-3 text-center text-xs font-bold text-blue-900 uppercase tracking-wider w-3/8">
+                                Educación a Distancia
+                            </th>
+                            <th scope="col" class="px-4 py-3 text-center text-xs font-bold text-blue-900 uppercase tracking-wider w-3/8">
+                                Educación Virtual
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <!-- Fila 1: Dependencia Tecnológica -->
+                        <tr class="hover:bg-blue-50">
+                            <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-blue-900">
+                                Dependencia Tecnológica
+                            </td>
+                            <td class="px-4 py-4 text-center text-sm text-gray-700">
+                                Baja (Materiales físicos/medios analógicos)
+                            </td>
+                            <td class="px-4 py-4 text-center text-sm text-gray-700 font-semibold text-blue-700">
+                                Alta (Acceso a Internet y dispositivos)
+                            </td>
+                        </tr>
+                        <!-- Fila 2: Plataforma Principal -->
+                        <tr class="hover:bg-blue-50">
+                            <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-blue-900">
+                                Plataforma Principal
+                            </td>
+                            <td class="px-4 py-4 text-center text-sm text-gray-700">
+                                Correo, material impreso, bibliotecas
+                            </td>
+                            <td class="px-4 py-4 text-center text-sm text-gray-700 font-semibold text-blue-700">
+                                LMS (Aulas virtuales, Moodle, etc.)
+                            </td>
+                        </tr>
+                        <!-- Fila 3: Sincronía (Tiempo) -->
+                        <tr class="hover:bg-blue-50">
+                            <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-blue-900">
+                                Interacción en Tiempo Real
+                            </td>
+                            <td class="px-4 py-4 text-center text-sm text-gray-700">
+                                Rara o nula (comunicación diferida)
+                            </td>
+                            <td class="px-4 py-4 text-center text-sm text-gray-700 font-semibold text-blue-700">
+                                Constante (Videoconferencias, chats en vivo)
+                            </td>
+                        </tr>
+                        <!-- Fila 4: Multimedia y Recursos -->
+                        <tr class="hover:bg-blue-50">
+                            <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-blue-900">
+                                Riqueza de Recursos
+                            </td>
+                            <td class="px-4 py-4 text-center text-sm text-gray-700">
+                                Limitada a texto e imágenes estáticas
+                            </td>
+                            <td class="px-4 py-4 text-center text-sm text-gray-700 font-semibold text-blue-700">
+                                Alta (Videos, simulaciones, realidad virtual)
+                            </td>
+                        </tr>
+                        <!-- Fila 5: Rol del Tutor/Profesor -->
+                        <tr class="hover:bg-blue-50">
+                            <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-blue-900">
+                                Rol del Tutor/Profesor
+                            </td>
+                            <td class="px-4 py-4 text-center text-sm text-gray-700">
+                                Facilitador de contenido y evaluador
+                            </td>
+                            <td class="px-4 py-4 text-center text-sm text-gray-700 font-semibold text-blue-700">
+                                Guía, curador de contenido y dinamizador de la comunidad
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Pie de Infografía y Conclusión -->
+        <footer class="bg-blue-900 text-white p-6 md:p-8 text-center rounded-b-xl">
+            <h3 class="text-xl font-semibold mb-2 text-blue-200">Conclusión Clave</h3>
+            <p class="text-lg font-light max-w-3xl mx-auto">
+                Mientras que la Educación a Distancia resolvió la barrera geográfica, la Educación Virtual (e-learning) ha superado la barrera del tiempo, ofreciendo una experiencia educativa más rica, inmediata y colaborativa.
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- Inicializar Lucide Icons después de la carga del DOM -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
